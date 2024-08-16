@@ -32,7 +32,11 @@
         <nav class="container">
             <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
 
-            <div class="links">
+            <div class="links" id="links">
+                <span class="close_menu"  onclick="Open_colose_Menu()"><i class="fa-solid fa-xmark"></i></span>
+                
+                
+                <a href="#" class="logo"><img src="img/logo.png" alt=""></a>
                 <a class="active" href="#">Home</a>
                 <a href="#">About</a>
                 <a href="#">services</a>
@@ -44,6 +48,8 @@
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <span class="icon_menu" onclick="Open_colose_Menu()"><i class="fa-solid fa-bars"></i></span>
+            
             </div>
         </nav>
     </header>
@@ -59,7 +65,7 @@
 
                 <div class="btns">
                     <a href="#" class="btn">hire me</a>
-                    <a href="#" class="btn_no_bg">Download Resume</a>
+                    <a href="img/Mahmoud Reda.pdf" class="btn_no_bg" download="">Download Resume</a>
                 </div>
             </div>
 
@@ -230,17 +236,17 @@
                 </div>
             </div>
 
-            <form action="">
+            <form method="post" action="https://api.sheetmonkey.io/form/dhKRaFUMsYHwtMiJvqDq4n">
                 <div class="inpts_form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Mobile Number">
-                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Full Name" name="Name" required>
+                    <input type="text" placeholder="Email" name="Email" required>
+                    <input type="text" placeholder="Mobile Number" name="Phone">
+                    <input type="text" placeholder="Subject" name="Subject">
 
-                    <textarea name="" id="" rows="10" placeholder="Your Message Here ..."></textarea>
+                    <textarea name="message" id="" rows="10" placeholder="Your Message Here ..."></textarea>
                 </div>
 
-                <button class="btn">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
 
         </div>
